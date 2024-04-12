@@ -12,8 +12,25 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
+
+  /* width scroll-bar */
   ::-webkit-scrollbar {
     width: 8px;
+  }
+
+  /* Track o riel */
+  ::-webkit-scrollbar-track {
+    background: rgb(23, 23, 23);
+  }
+
+  /* handle o posicionador del scroll */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primario);
+  }
+   
+  /* handle o posicionador del scroll con efecto hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primario);
   }
 }
 body {
@@ -240,7 +257,7 @@ section {
 
 .body-registro {
   height: 100vh;
-  background: linear-gradient(to right top, #24242473,#24242473),url("/assets/img/bg-register.jpg");
+  background: linear-gradient(to right top, #24242473,#24242473),url("../img/bg-register.jpg");
   background-position: center;
   background-size: cover;
 }
