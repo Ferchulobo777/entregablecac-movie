@@ -20,36 +20,28 @@
             href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
             rel="stylesheet">
         <!-- Estilos Personalizados CSS -->
-        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../assets/style/style.css">
         <!-- Favicon -->
-        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <!-- Title -->
-        <title>Registro | CAC-MOVIES</title>
+        <title>Iniciar Sesión | CAC-MOVIES</title>
     </head>
 <body class="body-registro" data-aos-easing="ease" data-aos-delay="0" data-aos-duration="0" cz-shortcut-listen="true">
     <header class="header-registro">
         <nav class="nav-bar">
             <a class="movie-icon sacudir-texto" href="#">
                 <i class="bi bi-film"></i>
-                <span>Registro | CAC-Movies</span>
+                <span>Iniciar Sesión | CAC-Movies</span>
             </a>
             <ul class="nav-list">
                 <li class="nav-list-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-list-item iniciar-sesion"><a class="nav-link" href="/assets/pages/iniciarsesion.html">Iniciar Sesion</a></li>
+                <li class="nav-list-item iniciar-sesion"><a class="nav-link" href="/pages/registrarse.html">Regitrarse</a></li>
             </ul>
         </nav>
     <main id="main" class="main">
       <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="seccion-registro">
-       <form  action="" method="get">
-        <h2 class="titulo-registro">Registro</h2>
-        <div class="error">
-            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
-            <span class="texto-error"></span>
-        </div>
-        <div class="error">
-            <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
-            <span class="texto-error"></span>
-        </div>
+       <form action="" method="get">
+        <h2 class="titulo-registro">Iniciar Sesión</h2>
         <div class="error">
             <input type="email" placeholder="Email" id="email" name="email" required>
             <span class="texto-error"></span>
@@ -58,33 +50,8 @@
             <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" required>
             <span class="texto-error"></span>
         </div>
-        <div class="error">
-            <input type="date" placeholder="Fecha de Nacimiento" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
-            <span class="texto-error"></span>
-        </div>
-        <div class="error">
-            <select name="pais" placeholder="País" id="pais">
-                <option value="">País</option>
-                <option value="AR">Argentina</option>
-                <option value="BR">Brasil</option>
-                <option value="PE">Peru</option>
-                <option value="UY">Uruguay</option>
-                <option value="PY">Paraguay</option>
-                <option value="CO">Colombia</option>
-                <option value="EC">Ecuador</option>
-                <option value="CH">Chile</option>
-                <option value="BO">Bolivia</option>
-                <option value="VE">Venezuela</option>
-            </select>
-            <span class="texto-error"></span>
-        </div>
-        <div class="">
-            <input type="checkbox" class="check" id="terminos" required>
-            <label for="terminos" class="texto-check condiciones">Acepto términos y condiciones</label>
-            <span class="texto-error"></span>
-        </div>
         <div>
-            <button id="btn-registro" class="btn-registro" type="submit">Registrarse</button>
+            <button id="btn-registro" class="btn-registro" type="submit">Iniciar Sesión</button>
             <span class="texto-error"></span>
         </div>
         <div class="ayuda">
