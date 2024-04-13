@@ -357,7 +357,7 @@ hr {
   }
   .seccion-titulo{
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .input-buscador {
     border-radius: 25px;
@@ -487,9 +487,10 @@ hr {
 }
 
 .seccion-registro h2 {
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 .ayuda {
@@ -560,6 +561,9 @@ select option:checked[value=""] {
   height: 0.90rem;
   width: 0.90rem;
 }
+.texto-check {
+  font-size: 1rem;
+}
 
 
 
@@ -595,6 +599,12 @@ select option:checked[value=""] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .seccion-registro h2 {
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
   }
   input {
     width: 100%;
@@ -795,13 +805,13 @@ select option:checked[value=""] {
     color: var(--color-terciario);
   }
 }
-@media screen and (min-width:993px) and (max-width:1270px) {
+@media screen and (min-width:993px) and (max-width:1550px) {
   .seccion-registro{
     height: 80vh;
     font-size: 1.2rem;
     background-color: rgb(42, 42, 42);
-    min-width: 50%;
-    margin: 80px auto;
+    width: 30%;
+    margin: 0px auto;
     padding: 40px 20px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -849,3 +859,4 @@ select option:checked[value=""] {
     color: var(--color-terciario);
   }
 }
+
