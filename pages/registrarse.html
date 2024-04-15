@@ -40,7 +40,65 @@
         </nav>
     <main id="main" class="main">
       <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="seccion-registro">
-       <form  action="" method="get">
+        <div class="container">
+            <h2 class="titulo-registro">Registro</h2>
+        </div>
+        <div class="container">
+            <form class="row">
+                <div class="col-12 input-height">
+                    <label for="nombreInput" class="form-label"></label>
+                    <input type="text" placeholder="Nombre" class="input"  id="nombreInput">
+                </div>
+                 <div class="col-12 input-height">
+                    <label for="inputApellido" class="form-label"></label>
+                    <input type="text" placeholder="Apellido" class="input" id="inputApellido">
+                </div>
+                <div class="col-12 input-height">
+                    <label for="inputEmail" class="form-label"></label>
+                    <input type="email" placeholder="Email" class="input" id="inputEmail">
+                </div>
+                <div class="col-12 input-height">
+                    <label for="inputPassword" class="form-label"></label>
+                    <input type="password" placeholder="Contraseña" class="input" id="inputPassword">
+                </div>
+                <div class="col-12 input-height">
+                    <label for="inputDate" class="form-label"></label>
+                    <input type="date" placeholder="Fecha de Nacimiento" class="input" id="inputDate">
+                </div>
+                <div class="col-12 input-height">
+                    <div class="error">
+                        <label for="inputPais"></label>
+                        <select name="pais" placeholder="País" id="inputPais">
+                            <option value="">País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BR">Brasil</option>
+                            <option value="PE">Peru</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="CH">Chile</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 input-height input-check">
+                    <input type="checkbox" class="check form-check-label" id="terminos" required>
+                    <label for="terminos" class="texto-check form-check-label">Acepto términos y condiciones</label>
+                    <span class="texto-error"></span>
+                </div>
+                <div class="col-12">
+                    <button id="btn-registro" class="btn-registro" type="submit">Registrarse</button>
+                    <span class="texto-error"></span>
+                </div>
+                <div class="ayuda">
+                    <a class="ayuda" href="#">Necesitas ayuda?</a>
+                </div>
+             </form>
+        </div>
+        
+       <!-- <form  action="" method="get">
         <h2 class="titulo-registro">Registro</h2>
         <div class="error">
             <input type="text" class="input" placeholder="Nombre" id="nombre" name="nombre" required>
@@ -90,7 +148,7 @@
         <div class="ayuda">
             <a class="ayuda" href="#">Necesitas ayuda?</a>
         </div>
-       </form>
+       </form> -->
       </section>
     </main>
     <!-- Script de Bootstrap -->
