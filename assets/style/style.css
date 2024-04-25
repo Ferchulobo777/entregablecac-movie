@@ -1,9 +1,12 @@
+
+/* Raiz */
 :root {
   --color-primario: #9f3647;
   --color-secundario: #181419;
   --color-terciario: #ffffff;
 }
 
+/* Estilos Principales */
 *,
 *::after,
 *::before {
@@ -77,6 +80,10 @@ header {
 .nav-link {
   border: 2px solid transparent;
   border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   color: var(--color-terciario);
   font-size: 1.1rem;
   font-weight: 700;
@@ -108,7 +115,11 @@ header {
 @keyframes shake {
   0% {
     transform: rotate(0deg) translateX(0);
-  }
+    -webkit-transform: rotate(0deg) translateX(0);
+    -moz-transform: rotate(0deg) translateX(0);
+    -ms-transform: rotate(0deg) translateX(0);
+    -o-transform: rotate(0deg) translateX(0);
+}
   25% {
     transform: rotate(5deg) translateX(5px);
   }
@@ -127,6 +138,7 @@ header {
   -webkit-animation: shake 0.2s ease-in-out infinite;
 }
 
+/* Seccion */
 section {
   align-items: center;
   display: flex;
@@ -188,7 +200,7 @@ section {
   text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive Seccion Principal */
 
 @media screen and (min-width: 320px) and (max-width: 777px) {
   header {
@@ -574,7 +586,7 @@ hr {
   padding: 1rem 1rem;
   text-decoration: none;
 }
-/* Responsive Tendencias */
+/* Responsive Seccion Tendencias */
 
 @media screen and (max-width: 778px) {
   .pelicula {
@@ -588,7 +600,7 @@ hr {
 }
 
 
-/* Seccion Peliculas Aclamadas */
+/* Seccion Mas Aclamadas */
 
 .peliculas-aclamadas {
   margin: 0 auto;
@@ -727,7 +739,10 @@ hr {
     }
   }
 }
-/* Detalle */
+
+/******************************* Pagina Detalle ***************************************/
+
+/* Seccion Detalle */
 
 .detalle {
   background: linear-gradient(to right top, #6d6969a7, #6d6969a7),
@@ -768,11 +783,11 @@ hr {
 }
 .trailer {
   align-items: center;
-  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 6rem auto;
+  width: 80%;
   .contenedor-trailer {
     color: var(--color-terciario);
     h2 {
@@ -792,12 +807,12 @@ hr {
     -o-transition: all 0.5s ease-in-out;
     &:hover {
       box-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+      margin-top: 0.8rem;
       transform: scale(1.08);
       -webkit-transform: scale(1.08);
       -moz-transform: scale(1.08);
       -ms-transform: scale(1.08);
       -o-transform: scale(1.08);
-      margin-top: 0.8rem;
     }
   }
 }
@@ -836,24 +851,24 @@ hr {
   }
 }
 thead {
-  display: table-header-group;
-  vertical-align: middle;
-  unicode-bidi: isolate;
   border-color: inherit;
+  display: table-header-group;
   text-align: center;
+  unicode-bidi: isolate;
+  vertical-align: middle;
 }
 tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  unicode-bidi: isolate;
   border-color: inherit;
+  display: table-row-group;
+  unicode-bidi: isolate;
+  vertical-align: middle;
 }
 td {
   font-size: 1.2rem;
   padding: 10px 10px;
 }
 
-/* Responsive Detalle */
+/* Responsive Seccion Detalle */
 @media screen and (max-width: 1200px) {
   .detalle {
     background: linear-gradient(to right top, #6d6969a7, #6d6969a7),
@@ -897,11 +912,11 @@ td {
   }
   .trailer {
     align-items: center;
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 6rem auto;
+    width: 80%;
     .contenedor-trailer {
       color: var(--color-terciario);
       h2 {
@@ -909,7 +924,6 @@ td {
       }
     }
     iframe {
-      width: auto;
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -920,14 +934,15 @@ td {
       -moz-transition: all 0.5s ease-in-out;
       -ms-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
+      width: auto;
       &:hover {
         box-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+        margin-top: 0.8rem;
         transform: scale(1.08);
         -webkit-transform: scale(1.08);
         -moz-transform: scale(1.08);
         -ms-transform: scale(1.08);
         -o-transform: scale(1.08);
-        margin-top: 0.8rem;
       }
     }
   }
@@ -936,8 +951,8 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     margin-top: 2rem;
+    width: 100%;
   }
   .redes {
     display: flex;
@@ -968,28 +983,28 @@ td {
     }
   }
   thead {
-    display: table-header-group;
-    vertical-align: middle;
-    unicode-bidi: isolate;
     border-color: inherit;
-    text-align: center;
+    display: table-header-group;
     margin: 1rem auto;
+    text-align: center;
+    unicode-bidi: isolate;
+    vertical-align: middle;
   }
   tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    unicode-bidi: isolate;
     border-color: inherit;
+    display: table-row-group;
     margin: 1rem auto;
+    unicode-bidi: isolate;
+    vertical-align: middle;
   }
   td {
     font-size: 1.2rem;
-    padding: 10px 10px;
     margin: .3rem auto;
+    padding: 10px 10px;
   }
 }
 
-/* Registro // Iniciar Sesion */
+/************************* Pagina de Registro // Iniciar Sesion ***********************/
 
 .body-registro {
   background: linear-gradient(to right top, #24242473, #24242473),
@@ -1081,7 +1096,7 @@ select:focus option[value=""] {
   display: none;
 }
 
-/* Oculta la opción "País" cuando está seleccionada */
+/* Ocultar la opción "País" cuando está seleccionada */
 select option:checked[value=""] {
   display: none;
 }
