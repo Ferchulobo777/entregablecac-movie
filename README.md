@@ -1,7 +1,7 @@
 # Aplicación Web de Películas
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/h4tgk1qmongvkfqttx7w.png" alt="Gastos" width="200"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/h4tgk1qmongvkfqttx7w.png" alt="Gastos" width="400"/>
 </p>
 
 ---
@@ -24,6 +24,7 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/y24k8ishvv1hnfkrxu6k.png" alt="Captura de pantalla" width="400"/>
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/gqkssndu9bldx52dhljh.png" width="400"/>
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714079069/Aplicacion-Movie/v1udhfqykjeildaxgyhv.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714079226/Aplicacion-Movie/yy6hl8adhp4hdo1lw148.png" width="400"/>
 </div>
 
 ---
@@ -46,11 +47,19 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 ---
 ## Participantes
 
-Fernando Gabriel Rodriguez
+Fernando Rodriguez
+Hassan El Hadad
+Alexis Mendez
+Iván Di Monte
+Franco Fernandez
 
 
 ## Contribución
 ¡Contribuciones son bienvenidas! Si tienes alguna idea para mejorar esta aplicación, por favor abre un issue o envía un pull request.
 
 ## Contacto
-Para cualquier pregunta o comentario, contáctame en <a href="mailto:ferchulobo2015@gmail.com" target="_blank" rel="noopener noreferrer">ferchulobo2015@gmail.com</a>.
+Para cualquier pregunta o comentario, contáctame en:
+<a href="mailto:ferchulobo2015@gmail.com" target="_blank" rel="noopener noreferrer">ferchulobo2015@gmail.com</a>
+<a href="mailto:Hassandc0110@gmail.com" target="_blank" rel="noopener noreferrer">Hassandc0110@gmail.com</a>
+<a href="mailto:ivansdmonte@hotmail.com" target="_blank" rel="noopener noreferrer">ivansdmonte@hotmail.com</a>
+<a href="mailto:franco21f@gmail.com" target="_blank" rel="noopener noreferrer">franco21f@gmail.com</a>
