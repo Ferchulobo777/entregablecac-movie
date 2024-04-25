@@ -23,6 +23,7 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 <div style="display: inline-block; margin: 0 auto;">
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/y24k8ishvv1hnfkrxu6k.png" alt="Captura de pantalla" width="400"/>
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/gqkssndu9bldx52dhljh.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714079069/Aplicacion-Movie/v1udhfqykjeildaxgyhv.png" width="400"/>
 </div>
 
 ---
@@ -43,7 +44,8 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 - AOS Animation Scroll
 - Google Fonts
 ---
-##Participantes
+## Participantes
+
 Fernando Gabriel Rodriguez
 
 
