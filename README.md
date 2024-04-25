@@ -58,7 +58,7 @@ Franco Fernandez
 ---
 
 ## Contacto
-Para cualquier pregunta o comentario, contáctame en: <br />
+Para cualquier pregunta o comentario, puedes contactarnos en: <br />
 <a href="mailto:ferchulobo2015@gmail.com" target="_blank" rel="noopener noreferrer">ferchulobo2015@gmail.com</a><br />
 <a href="mailto:Hassandc0110@gmail.com" target="_blank" rel="noopener noreferrer">Hassandc0110@gmail.com</a><br />
 <a href="mailto:aleemm19922@gmail.com" target="_blank" rel="noopener noreferrer">aleemm19922@gmail.com</a><br />
