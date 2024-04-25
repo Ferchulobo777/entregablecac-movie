@@ -47,14 +47,14 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 ---
 ## Participantes
 
-Fernando Rodriguez <br>
-Hassan El Hadad <br>
-Alexis Mendez <br>
-Iván Di Monte <br>
+Fernando Rodriguez <br />
+Hassan El Hadad <br />
+Alexis Mendez <br />
+Iván Di Monte <br />
 Franco Fernandez
 ---
 ## Contacto
-Para cualquier pregunta o comentario, contáctame en: <br></br>
+Para cualquier pregunta o comentario, contáctame en: <br />
 <a href="mailto:ferchulobo2015@gmail.com" target="_blank" rel="noopener noreferrer">ferchulobo2015@gmail.com</a>
 <a href="mailto:Hassandc0110@gmail.com" target="_blank" rel="noopener noreferrer">Hassandc0110@gmail.com</a>
 <a href="mailto:aleemm19922@gmail.com" target="_blank" rel="noopener noreferrer">aleemm19922@gmail.com</a>
