@@ -712,6 +712,7 @@ hr {
     flex-direction: column;
     height: 30vh;
     justify-content: center;
+    
   }
   .nav-bar-footer-list {
     align-items: center;
@@ -721,6 +722,9 @@ hr {
     justify-content: center;
     list-style: none;
     padding-top: 1.2rem;
+    ul {
+      text-align: center;
+    }
   }
 }
 /* Detalle */
@@ -856,9 +860,8 @@ td {
       url("../img/mario-bg.jpg");
     background-position: center;
     background-size: cover;
-    height: 80vh;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    height: 70rem;
+    padding-top: 60px;
     .contenedor-detalle {
       align-items: center;
       color: var(--color-terciario);
@@ -866,7 +869,7 @@ td {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 0 auto;
+      margin: 20rem auto;
       width: 75%;
       img {
         border-radius: 20px;
