@@ -44,7 +44,9 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 - Bootstrap Icons
 - AOS Animation Scroll
 - Google Fonts
+
 ---
+
 ## Participantes
 
 Fernando Rodriguez <br />
@@ -52,7 +54,9 @@ Hassan El Hadad <br />
 Alexis Mendez <br />
 Iván Di Monte <br />
 Franco Fernandez
+
 ---
+
 ## Contacto
 Para cualquier pregunta o comentario, contáctame en: <br />
 <a href="mailto:ferchulobo2015@gmail.com" target="_blank" rel="noopener noreferrer">ferchulobo2015@gmail.com</a><br />
@@ -60,6 +64,8 @@ Para cualquier pregunta o comentario, contáctame en: <br />
 <a href="mailto:aleemm19922@gmail.com" target="_blank" rel="noopener noreferrer">aleemm19922@gmail.com</a><br />
 <a href="mailto:ivansdmonte@hotmail.com" target="_blank" rel="noopener noreferrer">ivansdmonte@hotmail.com</a><br />
 <a href="mailto:franco21f@gmail.com" target="_blank" rel="noopener noreferrer">franco21f@gmail.com</a>
+
 ---
+
 ## Contribución
 ¡Contribuciones son bienvenidas! Si tienes alguna idea para mejorar esta aplicación, por favor abre un issue o envía un pull request.
