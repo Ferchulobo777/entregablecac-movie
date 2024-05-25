@@ -41,6 +41,8 @@ body {
   display: block;
 }
 
+
+
 /* Header */
 
 header {
@@ -749,7 +751,7 @@ hr {
     url("../img/mario-bg.jpg");
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 78vh;
   padding-top: 120px;
   .contenedor-detalle {
     align-items: center;
@@ -760,19 +762,25 @@ hr {
     margin: 0 auto;
     width: 75%;
     img {
+      height: 28em;
       border-radius: 20px;
-    }
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
     .contenedor-texto-detalle {
       h1 {
         font-size: 2.2rem;
         font-weight: 700;
       }
       h2 {
+        font-size: 1rem;
         margin-top: 20px;
       }
     }
   }
-
+  
   .contenedor-creditos {
     display: flex;
     flex-direction: row;
@@ -1015,223 +1023,188 @@ td {
   position: relative;
 }
 
+
+
+
 .seccion-registro {
-  align-items: center;
-  background-color: rgb(42, 42, 42);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2rem;
-  height: 50vh;
-  justify-content: center;
-  margin: 80px auto;
-  padding: 40px 10px;
+  background-color: #2A2A2A;
+  position: relative;
   width: 30%;
-}
-
-.seccion-registro h2 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 0rem;
-  text-align: center;
-}
-
-.ayuda {
-  color: #787878;
-  cursor: pointer;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-}
-
-.ayuda:hover {
-  color: var(--color-primario);
-}
-#ayuda {
-  text-align: center;
-}
-
-.input {
-  background-color: rgb(42, 42, 42);
-  border: 2px solid var(--color-primario);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  color: var(--color-terciario);
-  font-size: 1rem;
-  height: 1.8rem;
-  margin: 0 auto;
-  padding: 0.2rem 0.4rem;
-  width: 100%;
-}
-
-.input:focus {
-  border-color: 2px solid var(--color-primario);
-}
-
-select {
-  background-color: rgb(42, 42, 42);
-  border: 2px solid var(--color-primario);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  color: var(--color-terciario);
-  font-size: 1rem;
-  height: 1.8rem;
-  margin: 0.4rem auto;
-  outline: none;
-  padding: 0.2rem 0.5rem;
-  width: 100%;
-}
-
-select:focus option[value=""] {
-  display: none;
-}
-
-/* Ocultar la opción "País" cuando está seleccionada */
-select option:checked[value=""] {
-  display: none;
-}
-.input-height {
-  height: 2.8rem;
-}
-
-.input-check {
-  margin-top: 2.2rem;
-}
-
-.texto-check {
-  font-size: 1rem;
-}
-
-#btn-registro {
-  align-items: center;
-  color: var(--color-terciario);
+  height: 26rem;
   display: flex;
-  height: 2.8rem;
+  align-content: center;
   justify-content: center;
-  margin: 0.8rem auto;
-  padding-bottom: 0.2rem;
-  &:hover {
-    color: var(--color-secundario);
-    font-weight: 900;
+  margin: 4rem auto;
+  box-sizing: border-box;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
+  .input {
+    width: 100%;
+    margin: .5rem auto;
+    margin-top: 0;
+    margin-bottom: .6rem;
+    height: 2rem;
+    font-size: .7rem;
+    outline-color: var(--color-primario);
+    background-color: #2A2A2A;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: .2rem .5rem;
+    color: var(--color-terciario);
+    border: 2px solid var(--color-primario);
+}
+  select {
+    width: 100%;
+    color: var(--color-terciario);
+    margin: .5rem auto;
+    margin: .5rem auto;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    height: 2rem;
+    font-size: .7rem;
+    outline-color: var(--color-primario);
+    background-color: #2A2A2A;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: .2rem .5rem;
+    border: 2px solid var(--color-primario);
+  }
+  .btn-registro {
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+  }
+  .ayuda {
+      text-decoration: none;
+      list-style: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 1rem;
+      color: var(--color-terciario);
+      
+       &:hover {
+        color: var(--color-primario);
+        text-decoration:underline;
+      }
+    }
 }
 
-/* Responsive Registro // Iniciar Sesion */
-@media screen and (max-width: 480px) {
-  .seccion-registro {
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    height: 80vh;
-    justify-content: center;
-    margin: 14px auto;
-    min-width: 90%;
-    padding: 40px 5px;
-  }
-  .seccion-registro h2 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .texto-check {
-    font-size: 0.7rem;
-  }
-  .titulo-sesion {
-    font-size: 1rem;
-  }
+.titulo-registro {
+  text-align: center;
+  user-select: none;
+  top: 8rem;
+}
+.error {
+  color: red;
+  font-weight: 400;
+  font-size: .6rem;
 }
 
-@media screen and (max-width: 546px) {
-  .seccion-registro {
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    height: 80vh;
-    justify-content: center;
-    margin: 40px auto;
-    min-width: 70%;
-    padding: 40px 20px;
-  }
-}
+
 @media screen and (max-width: 776px) {
   .seccion-registro {
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    background-color: #2A2A2A;
+    position: relative;
+    width: 64%;
+    height: 26rem;
     display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    height: 80vh;
+    align-content: center;
     justify-content: center;
-    margin: 40px auto;
-    min-width: 70%;
-    padding: 40px 20px;
+    margin: 4rem auto;
+    box-sizing: border-box;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .input {
+      width: 100%;
+      margin: .5rem auto;
+      margin-top: 0;
+      margin-bottom: .6rem;
+      height: 2rem;
+      font-size: .6rem;
+      outline-color: var(--color-primario);
+      background-color: #2A2A2A;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      padding: .2rem .5rem;
+      color: var(--color-terciario);
+      border: 2px solid var(--color-primario);
   }
-}
-@media screen and (min-width: 776px) and (max-width: 992px) {
-  .seccion-registro {
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    height: 80vh;
-    justify-content: center;
-    margin: 80px auto;
-    min-width: 70%;
-    padding: 40px 20px;
+    select {
+      width: 100%;
+      color: var(--color-terciario);
+      margin: .5rem auto;
+      margin: .5rem auto;
+      margin-top: .2rem;
+      margin-bottom: .5rem;
+      height: 2rem;
+      font-size: .7rem;
+      outline-color: var(--color-primario);
+      background-color: #2A2A2A;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      padding: .2rem .5rem;
+      border: 2px solid var(--color-primario);
+    }
+    .btn-registro {
+      margin: 0 auto;
+      margin-top: 1rem;
+      height: 2.8rem;
+      
+    }
+    .texto-check{
+      font-size: .7rem;
+    }
+    .input-check {
+      width: 100%;
+    }
+    .terminos {
+      width: 100%;
+    }
+    .ayuda {
+        text-decoration: none;
+        list-style: none;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 1rem;
+        color: var(--color-terciario);
+        
+         &:hover {
+          color: var(--color-primario);
+          text-decoration:underline;
+        }
+      }
   }
-}
-@media screen and (min-width: 993px) and (max-width: 1550px) {
-  .seccion-registro {
-    align-items: center;
-    background-color: rgb(42, 42, 42);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    height: 80vh;
-    justify-content: center;
-    margin: 0px auto;
-    padding: 40px 20px;
-    width: 30%;
+  
+  .titulo-registro {
+    text-align: center;
+    user-select: none;
+    top: 8rem;
   }
+  .error {
+    color: red;
+    font-weight: 400;
+    font-size: .5rem;
+  }
+  
 }
+

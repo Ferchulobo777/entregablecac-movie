@@ -46,16 +46,18 @@
     <main id="main" class="main">
         <!-- Seccion Detalle -->
         <section class="detalle" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
-            <div class="contenedor-detalle">
-                <div class="img-detalle">
-                    <img src="../assets/img/mario.jpg" alt="">
+            <div id="movie-detalles" class="contenedor-detalle">
+                <div id="img-detalle" class="img-detalle">
+                    <img id="img-poster" class="img-card" src="../assets/img/mario.jpg" alt="">
                 </div>
                 <div class="contenedor-secundario">
                     <div class="contenedor-texto-detalle">
-                        <h1>The Super Mario Bros. Movie (2023)</h1>
-                        <p>04/05/2023 • Animación, Familia, Aventura, Fantasia, Comedia • 1h 33m</p>
+                        <h1 id="detalle-titulo">The Super Mario Bros. Movie (2023)</h1>
+                        <p id="detalle-fecha-genero">04/05/2023 • Animación, Familia, Aventura, Fantasia, Comedia • 1h
+                            33m</p>
                         <h2>Sinopsis</h2>
-                        <p>"Mientras trabajan bajo tierra para arreglar una tubería de agua, los plomeros (y hermanos)
+                        <p id="detalle-sinopsis">"Mientras trabajan bajo tierra para arreglar una tubería de agua, los
+                            plomeros (y hermanos)
                             de Brooklyn, Mario y Luigi, son transportados por una tubería misteriosa y vagan hacia un
                             mundo nuevo y mágico. Pero cuando los hermanos se separan, Mario se embarca en una búsqueda
                             épica para encontrar a Luigi."</p>
@@ -81,8 +83,8 @@
         <section class="trailer" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
             <div class="contenedor-trailer">
                 <h2>Ver trailer</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RjNcTBXTk4I?si=moAwH2_Ij-LoF6JM"
-                    title="YouTube video player" frameborder="0"
+                <iframe id="detalle-trailer" width="560" height="315" src="" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -93,15 +95,15 @@
                                 rel="noopener noreferrer""><img src=" ../assets/img/facebook.svg"
                                 alt="logo-facebook"></a></li>
                         <li><a href="https://twitter.com/supermariomovie" target="_blank" rel="noopener noreferrer"><img
-                                    src="../assets/img/icons8-twitterx.svg" alt="logo-twitter-x"></a></li>
+                                    src="../assets/img/twitter.svg" alt="logo-twitter"></a></li>
                         <li><a href="https://www.instagram.com/supermariomovie/" target="_blank"
                                 rel="noopener noreferrer"><img src="../assets/img/instagram.svg"
                                     alt="logo-instagram"></a></li>
-                        <li><a href="https://www.thesupermariobros.movie/" target="_blank" rel="noopener noreferrer"><i
-                                    class="bi bi-link-45deg"></i></a></li>
+                        <li><a href="https://www.thesupermariobros.movie/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/homepage.svg"
+                            alt="logo-instagram"></a></li>
                     </ul>
                 </div>
-                <div class="info">
+                <div id="detalle-informacion" class="info">
                     <table>
                         <thead>
                             <tr>
@@ -115,25 +117,25 @@
                                 <td>
                                     <strong>Estado</strong>
                                 </td>
-                                <td>Estrenada</td>
+                                <td id="detalle-estado">Estrenada</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Lenguaje Original</strong>
                                 </td>
-                                <td>Ingles</td>
+                                <td id="detalle-lenguaje">Ingles</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Presupuesto</strong>
                                 </td>
-                                <td>US$100,000,000.00</td>
+                                <td id="detalle-presupuesto">US$100,000,000.00</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Ganancias</strong>
                                 </td>
-                                <td>US$1.347.013.866,00</td>
+                                <td id="detalle-ganancias">US$1.347.013.866,00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -160,6 +162,7 @@
             </div>
         </footer>
     </main>
+    <script src="../assets/js/fetchMovieDetalle.js"></script>
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
