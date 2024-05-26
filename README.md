@@ -1,7 +1,7 @@
 # Aplicación Web de Películas
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/h4tgk1qmongvkfqttx7w.png" alt="Gastos" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750076/Movie%20App/x4xqfcvoznkaun0wazgq.png" alt="Gastos" width="400"/>
 </p>
 
 ---
@@ -21,10 +21,12 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 ## Capturas de Pantalla
 
 <div style="display: inline-block; margin: 0 auto;">
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/y24k8ishvv1hnfkrxu6k.png" alt="Captura de pantalla" width="400"/>
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714078365/Aplicacion-Movie/gqkssndu9bldx52dhljh.png" width="400"/>
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714079069/Aplicacion-Movie/v1udhfqykjeildaxgyhv.png" width="400"/>
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1714079226/Aplicacion-Movie/yy6hl8adhp4hdo1lw148.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750076/Movie%20App/x4xqfcvoznkaun0wazgq.png" alt="Captura de pantalla" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750085/Movie%20App/z1xnxcrii5m12s8lzkdr.png" alt="Captura de pantalla" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750093/Movie%20App/j3hcv0jwo6cm60tr7fkk.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750052/Movie%20App/unfnrfh4zt0se86dlfok.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750083/Movie%20App/ikjlnlr5nukpc7apjszy.png" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750076/Movie%20App/fsrfrekdaw1h0bcmixx3.png" width="400"/>
 </div>
 
 ---
