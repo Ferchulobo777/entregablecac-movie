@@ -40,6 +40,7 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 ## Tecnologías Utilizadas
 - HTML
 - CSS
+- JavaScript
 - Bootstrap
 - Bootstrap Icons
 - AOS Animation Scroll
