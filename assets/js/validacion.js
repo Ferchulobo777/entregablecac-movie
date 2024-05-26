@@ -1,26 +1,63 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Verificar si el usuario está autenticado al cargar la página
+    verificarAutenticacion();
 
-    // 1 - Seleccionamos el Formulario del DOM
-    const form = document.querySelector('form');
+    // Obtener todos los enlaces a la página de inicio
+    const enlacesHome = document.querySelectorAll('.nav-list-item a[href="./pages/home.html"]');
 
-    // 2 - Agregar un evento que escuche el evento cuando se envía el formulario
+    // Iterar sobre cada enlace y agregar un evento de clic
+    enlacesHome.forEach(enlace => {
+        enlace.addEventListener('click', (event) => {
+            // Verificar si el usuario está autenticado al hacer clic en el enlace
+            if (!estaAutenticado()) {
+                // Si no está autenticado, prevenir la navegación a la página de inicio
+                event.preventDefault();
+                // Mostrar un mensaje de error o redirigir a la página de inicio de sesión
+                alert('Debes iniciar sesión para acceder a la página de inicio.');
+                // Podrías redirigir al usuario a la página de inicio de sesión en lugar de mostrar una alerta
+                window.location.href = './pages/registrarse.html'; // Redirigir al formulario de registro
+            }
+        });
+    });
+
+    // Función para verificar si el usuario está autenticado
+    function estaAutenticado() {
+        // Verificar si hay un indicador de autenticación en el localStorage
+        return localStorage.getItem('autenticado') === 'true';
+    }
+
+    // Función para verificar la autenticación al cargar la página
+    function verificarAutenticacion() {
+        // Si el usuario no está autenticado, eliminar cualquier indicador de autenticación en el localStorage
+        if (!estaAutenticado()) {
+            localStorage.removeItem('autenticado');
+        }
+    }
+
+    // Seleccionar el Formulario del DOM
+    const form = document.getElementById('loginForm');
+
+    // Agregar un evento que escuche el evento cuando se envía el formulario
     form.addEventListener('submit', (event) => {
         // Si la validación del formulario no es exitosa
         if (!validacionForm()) {
             // Mostramos una alerta de que el formulario no es válido
             alert("El Formulario no es válido, por favor corrige los errores");
-            // y evitamos que el formulario se envíe
-            // este método evita que el formulario se envíe con errores
-            event.preventDefault(); 
+            // Evitar el envío del formulario
+            event.preventDefault();
         } else {
-            // Si la validación del formulario es exitosa mostramos una alerta con un mensaje
+            // Si la validación del formulario es exitosa
             alert("Formulario Válido, Enviando...");
-            // No necesitamos hacer nada aquí porque el formulario se enviará automáticamente
-            // y redirigirá según el atributo action del formulario.
+            // Evitar el envío real para la simulación
+            event.preventDefault();
+            // Simular autenticación
+            localStorage.setItem('autenticado', 'true');
+            // Redirigir a la página de inicio
+            window.location.href = './pages/home.html';
         }
     });
 
-    // 3 - Función para validar el formulario
+    // Función para validar el formulario
     function validacionForm() {
         let esValido = true;
         // Validar el campo de Email
@@ -30,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return esValido;
     }
 
-    // 4 - Función para validar el campo Email
+    // Función para validar el campo Email
     function validarCampoEmail(id) {
         // Obtener el elemento del campo de email mediante su ID
         const field = document.getElementById(id);
@@ -55,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 5 - Función para validar el campo Password
+    // Función para validar el campo Password
     function validarCampoPassword(id) {
         // Obtener el elemento del campo de contraseña mediante su ID
         const field = document.getElementById(id);
@@ -79,35 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         }
     }
-     // Función para validar el campo Nombre
-     function validarCampoNombre(id) {
-        const field = document.getElementById(id);
-        const nombre = field.value.trim();
 
-        if (nombre === "") {
-            setErrorFor(field, 'El nombre es obligatorio');
-            return false;
-        } else {
-            setSuccessFor(field);
-            return true;
-        }
-    }
-
-    // Función para validar el campo Apellido
-    function validarCampoApellido(id) {
-        const field = document.getElementById(id);
-        const apellido = field.value.trim();
-
-        if (apellido === "") {
-            setErrorFor(field, 'El apellido es obligatorio');
-            return false;
-        } else {
-            setSuccessFor(field);
-            return true;
-        }
-    }
-
-    // 6 - Función para establecer un mensaje de error en un campo
+    // Función para establecer un mensaje de error en un campo
     const setErrorFor = (input, message) => {
         // Encuentra el elemento padre del campo de entrada
         const formControl = input.closest('div');
@@ -121,11 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
         input.focus();
     };
 
-    // 7 - Función auxiliar para validar el formato del email
+    // Función auxiliar para validar el formato del email
     function esEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
-    
+
     // Función auxiliar para validar el formato del password
     function esPassword(password) {
         const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
