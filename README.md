@@ -1,4 +1,4 @@
-#                                                                         🎬🎬🎬 Movie APP 🎬🎬🎬
+<h1 align="center">🎬🎬🎬 Movie APP 🎬🎬🎬</h1>
 
 <p align="center">
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1716750076/Movie%20App/x4xqfcvoznkaun0wazgq.png" alt="Gastos" width="400"/>
