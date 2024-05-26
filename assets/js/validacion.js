@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Mostrar un mensaje de error o redirigir a la página de inicio de sesión
                 alert('Debes iniciar sesión para acceder a la página de inicio.');
                 // Podrías redirigir al usuario a la página de inicio de sesión en lugar de mostrar una alerta
+                window.location.href = './pages/registrarse.html'; // Redirigir al formulario de registro
             }
         });
     });
