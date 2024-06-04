@@ -14,6 +14,144 @@ const createElement = (tag, className, attributes = {}) => {
   return element;
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Funciones que rellenan la base de datos:
+document.addEventListener("DOMContentLoaded", () => {
+  let consulta = [];
+  let uniqueMovieIds = new Set();
+
+  async function fetchAllMovies() {
+    let page = 1;
+    let hasMore = true;
+
+    try {
+      while (hasMore) {
+        const response = await fetch(`${API_SERVER}/movie/popular?api_key=${API_KEY}&page=${page}`);
+        const data = await response.json();
+
+        if (data.results) {
+          data.results.forEach(movie => {
+            if (!uniqueMovieIds.has(movie.id)) {
+              uniqueMovieIds.add(movie.id);
+              consulta.push(movie); // Agregar película a la lista de consulta si el ID es único
+            }
+          });
+
+          hasMore = page < data.total_pages; // Asegúrate de no pedir más páginas de las que existen
+          page++;
+        } else {
+          hasMore = false;
+        }
+      }
+    } catch (error) {
+      console.error("Error al obtener datos de la API:", error);
+    }
+
+    // Crear el contenido de la consulta INSERT
+    let contenido = "INSERT INTO movies VALUES\n";
+
+    consulta.forEach((movie, index) => {
+      contenido += `(${JSON.stringify(movie.id)}, ${JSON.stringify(movie.title)}, ${JSON.stringify(movie.overview)}, 'N/A', 'N/A', ${JSON.stringify(movie.release_date.substring(0, 4))}, 0, 'N/A')`;
+
+      if (index < consulta.length - 1) {
+        contenido += ",\n";
+      }
+    });
+
+    // Crear un blob con el contenido del archivo
+    const blob = new Blob([contenido], { type: 'text/plain' });
+
+    // Crear un enlace para descargar el blob como un archivo
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'archivo.txt';
+
+    // Hacer clic en el enlace para iniciar la descarga
+    link.click();
+
+    // Una vez creada la tabla de películas, obtener los directores
+    const updateContenido = await fetchDirectors(uniqueMovieIds);
+
+    if (updateContenido) {
+      console.log("Generando archivo director_updates.txt");
+      // Crear un blob con el contenido del archivo
+      const updateBlob = new Blob([updateContenido], { type: 'text/plain' });
+
+      // Crear un enlace para descargar el blob como un archivo
+      const updateLink = document.createElement('a');
+      updateLink.href = URL.createObjectURL(updateBlob);
+      updateLink.download = 'director_updates.txt';
+
+      // Hacer clic en el enlace para iniciar la descarga
+      document.body.appendChild(updateLink); // Asegurarse de que el enlace esté en el DOM
+      updateLink.click();
+      document.body.removeChild(updateLink); // Limpiar el DOM
+    } else {
+      console.log("No hay contenido para director_updates.txt");
+    }
+  }
+
+  async function fetchDirectors(uniqueMovieIds) {
+    let updateContenido = "";
+
+    const directorPromises = Array.from(uniqueMovieIds).map(async movieId => {
+      try {
+        const response = await fetch(`${API_SERVER}/movie/${movieId}?api_key=${API_KEY}&append_to_response=credits&language=es-ES`);
+        const data = await response.json();
+        
+        const director = data.credits.crew.find(miembro => miembro.job === 'Director');
+        if (director) {
+          updateContenido += `UPDATE movies SET director = '${director.name}' WHERE id = ${movieId};\n`;
+        }
+      } catch (error) {
+        console.error(`Error al obtener detalles de la película ${movieId}:`, error);
+      }
+    });
+
+    await Promise.all(directorPromises);
+
+    console.log(updateContenido); // Verificar que el contenido se genera correctamente
+    return updateContenido; // Retornar el contenido generado
+  }
+
+  fetchAllMovies();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Función para manejar la búsqueda de películas
 const handleSearch = async (event) => {
   event.preventDefault();
@@ -61,7 +199,7 @@ const handleSearch = async (event) => {
 
   tendenciasContainer.appendChild(peliculasContainer);
 };
-
+let ids = [];
 // Función para cargar películas en la cuadrícula de tendencias
 const movieFetchGrid = async (page = 1) => {
   const response = await fetch(
@@ -69,10 +207,15 @@ const movieFetchGrid = async (page = 1) => {
   );
   const data = await response.json();
   const movies = data.results;
+
   const tendenciasContainer = document.getElementById("tendencias-peliculas");
   tendenciasContainer.innerHTML = "";
   const peliculasContainer = createElement("div", "peliculas");
+  
   movies.forEach((movie) => {
+    
+    ids.push(movie.id);
+    
     const anchor = createElement("a", "");
     anchor.href = `../../pages/detalle.html?id=${movie.id}`;
     const peliculaItem = createElement("div", "pelicula");
@@ -88,10 +231,11 @@ const movieFetchGrid = async (page = 1) => {
     peliculaItem.append(img, tituloPelicula);
     anchor.appendChild(peliculaItem);
     peliculasContainer.appendChild(anchor);
+    
   });
   tendenciasContainer.appendChild(peliculasContainer);
   tendenciasContainer.parentElement.setAttribute("data-page", page);
-
+  
   // Guardamos la página actual en localStorage
   localStorage.setItem('currentPage', page);
 };
