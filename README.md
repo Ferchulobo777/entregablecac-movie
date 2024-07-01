@@ -48,6 +48,16 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 - AOS Animation Scroll
 - Google Fonts
 
+<p align="center">
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801426/Logos/html5_dfdvdv.svg" title="HTML" alt="HTML" width="50" height="50" style="margin: 0 30px;"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801386/Logos/css_ygmzby.svg" title="CSS" alt="CSS" width="50" height="50" style="margin: 0 30px;"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801445/Logos/javascript-original_ocrdpx.svg" title="JavaScript" alt="JavaScript" width="50" height="50" style="margin: 0 30px;"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801384/Logos/bootstrap_wdpwnp.svg" title="Bootstrap" alt="Bootstrap" width="50" height="50" style="margin: 0 30px;"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719808096/Logos/68747470733a2f2f7333322e706f7374696d672e6f72672f6b7476743539686f6c2f616f735f6865616465722e706e67-300x186-2775907770_gam8sr.png" title="AOS Animation Scroll" alt="AOS_Animation_Scroll" width="50" height="50" style="margin: 0 30px;"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719808085/Logos/Google_Fonts_logo_p9j0dd.svg" title="Google Fonts" alt="Google_Fonts" width="50" height="50" style="margin: 0 30px;"/>
+</p>
+
+
 ---
 
 ## Participantes
