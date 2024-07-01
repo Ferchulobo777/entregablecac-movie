@@ -7,7 +7,7 @@
 ---
 
 ## Descripción
-Este es un proyecto entregable del programa "Codo a Codo", realizado por el equipo de desarrollo Número 11. Se trata de una aplicación web de películas que permite a los usuarios explorar información sobre películas, como detalles de la trama, trailer, y más.
+Este es un proyecto entregable del programa "Codo a Codo", realizado por el equipo de desarrollo Número 11. Se trata de una aplicación web elaborada desde el lado del cliente cuya tematica es de películas que permite a los usuarios explorar información sobre películas, como detalles de la trama, trailer, y más.
 
 ---
 
