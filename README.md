@@ -48,7 +48,7 @@ Este es un proyecto entregable del programa "Codo a Codo", realizado por el equi
 - AOS Animation Scroll
 - Google Fonts
 
-<p align="center">
+<p align="left">
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801426/Logos/html5_dfdvdv.svg" title="HTML" alt="HTML" width="50" height="50" style="margin: 0 30px;"/>
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801386/Logos/css_ygmzby.svg" title="CSS" alt="CSS" width="50" height="50" style="margin: 0 30px;"/>
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1719801445/Logos/javascript-original_ocrdpx.svg" title="JavaScript" alt="JavaScript" width="50" height="50" style="margin: 0 30px;"/>
